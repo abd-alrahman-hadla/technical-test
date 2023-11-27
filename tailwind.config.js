@@ -18,7 +18,10 @@ module.exports = {
                     xl: '100%',
                 },
             },
-            colors: {}
+            colors: {},
+            boxShadow: {
+                '4xl': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
+            }
         },
         screens: {
             'sm': '576px',
