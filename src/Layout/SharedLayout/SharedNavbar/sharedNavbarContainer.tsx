@@ -9,7 +9,8 @@ const {Header} = Layout;
 const SharedNavbar = ({...props}: any) => {
     let buttonNumber: string[] = Array(5).fill('')
     return (
-        <Header className={"h-[54px] bg-white flex items-center justify-between shadow-[0_4px_4px_0_rgba(0,0,0,0.25)]"}>
+        <Header
+            className={"h-[54px] bg-white flex items-center justify-between shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] mb-2"}>
             <div className={"flex items-center gap-[10px]"}>
                 <HiOutlineMenuAlt3/>
                 <Image src={Logo_Image} preview={false} draggable={false}/>
