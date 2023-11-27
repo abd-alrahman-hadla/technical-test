@@ -15,7 +15,7 @@ module.exports = {
                     DEFAULT: '100%',
                     sm: '100%',
                     lg: '100%',
-                    xl: '100%',
+                    xl: '1048px',
                 },
             },
             colors: {},

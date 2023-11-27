@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Image, Layout} from 'antd';
 import {HiOutlineMenuAlt3} from "react-icons/hi";
-import {Logo_Image} from "../../../Constants/sharedImagesConstants";
+import {Red_Logo_Image} from "../../../Constants/sharedImagesConstants";
 import {Text} from "../../../Components";
 
 const {Header} = Layout;
@@ -13,7 +13,7 @@ const SharedNavbar = ({...props}: any) => {
             className={"h-[54px] bg-white flex items-center justify-between shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] mb-2"}>
             <div className={"flex items-center gap-[10px]"}>
                 <HiOutlineMenuAlt3/>
-                <Image src={Logo_Image} preview={false} draggable={false}/>
+                <Image src={Red_Logo_Image} preview={false} draggable={false}/>
                 <div className={"flex gap-[14px]"}>
                     {
                         buttonNumber?.map((item, index) => {
