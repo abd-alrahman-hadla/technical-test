@@ -1,0 +1,1 @@
+export {default as SingleBestsellersSection} from './singleTopDealsSectionContainer'

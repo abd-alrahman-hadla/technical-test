@@ -3,7 +3,8 @@ export interface ISharedHomeSectionProps<T> {
     itemRender: any
     withViewAllButton: boolean
     title: string
-    topIcon: string
+    topIcon?: string
     onViewAllClick?: (e: any) => void
     onItemClick?: (itemId: string) => void
+    uniqueId: string
 }

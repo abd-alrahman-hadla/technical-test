@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text, Title} from "../../../../Components";
 import {Divider, Image} from "antd";
-import {ISingleTopDealsProps} from "./interface";
+import {ISingleTopDealsSectionProps} from "./interface";
 import {Product_Image} from "../../../../Constants/sharedImagesConstants";
 
-const SingleTopDeals = ({...props}: ISingleTopDealsProps) => {
+const SingleTopDealsSection = ({...props}: ISingleTopDealsSectionProps) => {
     const {name, id, price, ingredients, isLiked} = props
     return (
         <div
@@ -31,4 +31,4 @@ const SingleTopDeals = ({...props}: ISingleTopDealsProps) => {
     );
 };
 
-export default SingleTopDeals;
+export default SingleTopDealsSection;

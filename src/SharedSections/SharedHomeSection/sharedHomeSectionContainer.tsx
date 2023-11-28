@@ -6,7 +6,16 @@ import {Text, Title} from "../../Components";
 import {BsArrowRightSquare} from "react-icons/bs";
 
 function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeSectionProps<Item>) {
-    const {title, itemRender, itemsList, topIcon, withViewAllButton = true, onViewAllClick, onItemClick} = props
+    const {
+        uniqueId,
+        title,
+        itemRender,
+        itemsList,
+        topIcon,
+        withViewAllButton = true,
+        onViewAllClick,
+        onItemClick
+    } = props
 
     const ItemRender: any = itemRender
     return (
@@ -17,7 +26,10 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
                         <Title className={"!text-md !font-bold !text-[#393F52] !m-0"}>
                             {title}
                         </Title>
-                        <Image src={topIcon} preview={false} draggable={false}/>
+                        {
+                            topIcon &&
+                            <Image src={topIcon} preview={false} draggable={false}/>
+                        }
                     </Space>
                     <div className={"bg-[#E4002B] mt-[3px] w-[34px] h-[2px]"}/>
                 </div>
@@ -36,7 +48,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
                         : <span/>
                 }
             </div>
-            <HorizontalScrollSection>
+            <HorizontalScrollSection uniqueId={uniqueId}>
                 {
                     itemsList?.map((item) => {
                         return (
