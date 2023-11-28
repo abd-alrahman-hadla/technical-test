@@ -1,6 +1,6 @@
-import {ITopDealsItem} from "./interface";
+import {ISharedProductCardProps} from "../../../SharedSections/SharedProductCard/interface";
 
-export const topDealsData: ITopDealsItem[] = [
+export const topDealsData: ISharedProductCardProps[] = [
     {
         "name": "Awesome Steel Tuna",
         "ingredients": "Small",

@@ -1,5 +1,5 @@
-import {ITopDealsItem} from "../interface";
+import {ISharedProductCardProps} from "../../../../SharedSections/SharedProductCard/interface";
 
-export interface ISingleTopDealsSectionProps extends ITopDealsItem {
+export interface ISingleTopDealsSectionProps extends ISharedProductCardProps {
 
 }

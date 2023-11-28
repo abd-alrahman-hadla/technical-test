@@ -1,34 +1,10 @@
 import React from 'react';
-import {Text, Title} from "../../../../Components";
-import {Divider, Image} from "antd";
 import {ISingleTopDealsSectionProps} from "./interface";
-import {Product_Image} from "../../../../Constants/sharedImagesConstants";
+import {SharedProductCard} from "../../../../SharedSections/SharedProductCard";
 
 const SingleTopDealsSection = ({...props}: ISingleTopDealsSectionProps) => {
-    const {name, id, price, ingredients, isLiked} = props
     return (
-        <div
-            className={"relative min-w-[215px] h-[251px] bg-white rounded-[15px] px-[9px] pb-[14px] mt-[128px] flex flex-col justify-between"}>
-            <Image wrapperClassName={"absolute top-[-100px]"} src={Product_Image} draggable={false}
-                   preview={false} width={204} height={158}/>
-            <div>
-                <Title className={"!text-[#393F52] !text-md mt-[61px]"}>
-                    {name}
-                </Title>
-                <Divider className={"my-[9px]"}/>
-                <Text className={"!text-[#6A6E8E] text-sm"}>
-                    {ingredients}
-                </Text>
-            </div>
-            <div>
-                <div className={"bg-[#F0F4FA] h-[37px] flex justify-center items-center"}>
-                    <Text className={"!text-[#393F52] font-bold text-[10px]"}>
-                        {price}
-                    </Text>
-                </div>
-            </div>
-        </div>
+        <SharedProductCard {...props}/>
     );
 };
-
 export default SingleTopDealsSection;

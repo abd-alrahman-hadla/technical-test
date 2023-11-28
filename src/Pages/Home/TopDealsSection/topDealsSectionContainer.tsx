@@ -2,8 +2,8 @@ import React from 'react';
 import {topDealsData} from "./constants";
 import {Top_Deals_Icon} from "../../../Constants/sharedImagesConstants";
 import {SharedHomeSection} from "../../../SharedSections/SharedHomeSection";
-import {ITopDealsItem} from "./interface";
 import {SingleTopDealsSection} from "./SingleTopDealsSection";
+import {ITopDealsItem} from "./interface";
 
 const TopDealsSection = () => {
 

@@ -11,9 +11,9 @@ const Home = () => {
     return (
         <div>
             <ImageSection/>
-            <div className={"max-w-[1200px] mx-auto flex flex-col gap-[32px] mb-[28px]"}>
-                <TopDealsSection/>
+            <div className={"max-w-[1200px] mx-auto flex flex-col gap-[32px] mt-[27px] mb-[28px]"}>
                 <ExploreMenuSection/>
+                <TopDealsSection/>
                 <BestsellersSection/>
             </div>
         </div>

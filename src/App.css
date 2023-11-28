@@ -4,4 +4,23 @@
 
 @layer components {
 
+    .default-segmented-text .ant-segmented-item-label {
+        @apply font-semibold text-[#ADAEB1];
+    }
+
+    .selected-segmented-text .ant-segmented-item-selected .ant-segmented-item-label {
+        @apply font-semibold text-[#E4002B];
+    }
+
+    .selected-segmented-text .ant-segmented-item-selected {
+        @apply bg-[#FEF2F4];
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-col-center {
+        @apply flex justify-center items-center;
+    }
 }
