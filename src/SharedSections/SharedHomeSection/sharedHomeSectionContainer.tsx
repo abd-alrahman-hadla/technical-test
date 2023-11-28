@@ -31,7 +31,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
                             <Image src={topIcon} preview={false} draggable={false}/>
                         }
                     </Space>
-                    <div className={"bg-[#E4002B] mt-[3px] w-[34px] h-[2px]"}/>
+                    <div className={"bg-[#E4002B] mt-[6px] w-[34px] h-[2px]"}/>
                 </div>
                 {
                     withViewAllButton ?
@@ -40,7 +40,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
                                 className={"flex gap-[9px] items-center bg-transparent hover:!bg-transparent focus:!bg-transparent"}
                         >
 
-                            <Text className={"!text-md !font-bold text-[#427EFF]"}>
+                            <Text className={"!text-md !font-bold !text-[#427EFF]"}>
                                 View All
                             </Text>
                             <BsArrowRightSquare className={"text-md text-[#427EFF]"}/>

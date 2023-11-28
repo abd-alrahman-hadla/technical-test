@@ -1,6 +1,9 @@
 module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
+        backgroundImage: {
+            'explore-menu': "url('../src/Assets/Images/Explore-Menu-Background-Image.png')",
+        },
         extend: {
             container: {
                 padding: {

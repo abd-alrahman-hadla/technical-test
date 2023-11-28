@@ -1,1 +1,1 @@
-export {default as SingleBestsellersSection} from './singleTopDealsSectionContainer'
+export {default as SingleBestsellersSection} from './singleBestsellersSectionContainer'

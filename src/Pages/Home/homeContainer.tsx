@@ -3,6 +3,7 @@ import {LoadingOutlined} from '@ant-design/icons';
 import {ImageSection} from "./ImageSection";
 import {TopDealsSection} from "./TopDealsSection";
 import {BestsellersSection} from "./BestsellersSection";
+import {ExploreMenuSection} from "./ExploreMenuSection";
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
             <ImageSection/>
             <div className={"max-w-[1200px] mx-auto flex flex-col gap-[32px] mb-[28px]"}>
                 <TopDealsSection/>
+                <ExploreMenuSection/>
                 <BestsellersSection/>
             </div>
         </div>
