@@ -8,13 +8,11 @@ import {SingleTopDealsSection} from "./SingleTopDealsSection";
 const TopDealsSection = () => {
 
     return (
-        <div>
             <SharedHomeSection<ITopDealsItem> itemsList={topDealsData}
                                               itemRender={SingleTopDealsSection}
                                               withViewAllButton={true}
                                               uniqueId={"top-deals"}
                                               title={"Top Deals"} topIcon={Top_Deals_Image}/>
-        </div>
     );
 };
 

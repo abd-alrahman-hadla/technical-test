@@ -7,13 +7,11 @@ import {SingleBestsellersSection} from "./SingleBestsellersSection";
 const BestsellersSection = () => {
 
     return (
-        <div>
             <SharedHomeSection<IBestsellersItem> itemsList={bestsellersData}
                                                  itemRender={SingleBestsellersSection}
                                                  withViewAllButton={false}
                                                  uniqueId={"bestsellers"}
                                                  title={"Bestsellers"}/>
-        </div>
     );
 };
 
