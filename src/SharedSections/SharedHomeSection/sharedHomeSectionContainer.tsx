@@ -20,7 +20,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
     const ItemRender: any = itemRender
     return (
         <div>
-            <div className={"flex justify-between mb-[32px]"}>
+            <div className={"flex justify-between"}>
                 <div className={"flex flex-col justify-start"}>
                     <Space className={"items-center"}>
                         <Title className={"!text-md !font-bold !text-[#393F52] !m-0"}>

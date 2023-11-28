@@ -5,7 +5,7 @@ import {ISingleBestsellersSectionProps} from "./interface";
 const SingleBestsellersSection = ({...props}: ISingleBestsellersSectionProps) => {
     const {image} = props
     return (
-        <Image wrapperClassName={"min-w-[215px]"} src={image} draggable={false}
+        <Image wrapperClassName={"min-w-[215px] mt-[32px] "} src={image} draggable={false}
                preview={false} width={222} height={300}/>
     );
 };
