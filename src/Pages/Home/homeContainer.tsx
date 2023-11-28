@@ -1,6 +1,7 @@
 import React from 'react';
 import {LoadingOutlined} from '@ant-design/icons';
 import {ImageSection} from "./ImageSection";
+import {TopDealsSection} from "./TopDealsSection";
 
 const Home = () => {
 
@@ -8,6 +9,10 @@ const Home = () => {
     return (
         <div>
             <ImageSection/>
+            <div className={"max-w-[1200px] mx-auto"}>
+
+                <TopDealsSection/>
+            </div>
         </div>
     );
 };
