@@ -19,7 +19,7 @@ const SharedFooter = ({...props}: any) => {
                     requirements for delivery may vary.
                 </Text>
             </div>
-            <div className={"flex items-center justify-between container mx-auto text-center"}>
+            <div className={"flex-center gap-[70px] container mx-auto text-center"}>
                 {
                     footerItems?.map((item, index) => {
                         return (

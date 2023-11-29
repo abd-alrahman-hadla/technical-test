@@ -15,4 +15,4 @@ const HorizontalScrollSection = ({children, uniqueId}: IHorizontalScrollSectionP
     );
 };
 
-export default HorizontalScrollSection;
+export default React.memo(HorizontalScrollSection);

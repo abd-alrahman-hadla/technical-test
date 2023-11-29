@@ -16,11 +16,16 @@
         @apply bg-[#FEF2F4];
     }
 
+
+    .default-modal .ant-modal-content {
+        @apply bg-[#F1F3F6] px-[75px] h-[589px] rounded-[44px];
+    }
+
     .flex-center {
         @apply flex justify-center items-center;
     }
 
     .flex-col-center {
-        @apply flex justify-center items-center;
+        @apply flex flex-col justify-center items-center;
     }
 }

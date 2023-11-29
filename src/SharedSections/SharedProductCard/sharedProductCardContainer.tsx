@@ -21,7 +21,7 @@ const SharedProductCard = ({...props}: ISharedProductCardProps) => {
                 </Text>
             </div>
             <div>
-                <div className={"bg-[#F0F4FA] h-[37px] flex justify-center items-center"}>
+                <div className={"bg-[#F0F4FA] h-[37px] flex-center"}>
                     <Text className={"!text-[#393F52] font-bold text-[10px]"}>
                         {price}
                     </Text>
@@ -31,4 +31,4 @@ const SharedProductCard = ({...props}: ISharedProductCardProps) => {
     );
 };
 
-export default SharedProductCard;
+export default React.memo(SharedProductCard);
