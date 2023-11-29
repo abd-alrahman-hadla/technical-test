@@ -1,6 +1,9 @@
 module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
+        backgroundImage: {
+            'explore-menu': "url('../src/Assets/Images/Explore-Menu-Background-Image.png')",
+        },
         extend: {
             container: {
                 padding: {
@@ -15,10 +18,16 @@ module.exports = {
                     DEFAULT: '100%',
                     sm: '100%',
                     lg: '100%',
-                    xl: '100%',
+                    xl: '1400px',
                 },
             },
-            colors: {}
+            colors: {
+                primaryColor: "#E4002B",
+                secondaryColor: "#393F52",
+            },
+            boxShadow: {
+                '4xl': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
+            }
         },
         screens: {
             'sm': '576px',
@@ -27,7 +36,7 @@ module.exports = {
         },
         fontSize: {
             sm: '12px',
-            md: '16px',
+            md: '14px',
             lg: '24px',
             xl: '48px',
             xxl: '76px',
