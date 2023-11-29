@@ -42,7 +42,7 @@ const SharedProductModal = ({data, isOpen, onCancel}: ISharedProductModalProps) 
                 <div
                     className={"bg-[#E4002B] h-[54px] flex-center w-[87%] absolute bottom-[-25px] mx-[24px] rounded-[8px] mt-auto"}>
                     <Text className={"!text-white font-bold text-md"}>
-                        {data?.price} QAR
+                        {data?.price?.split(".")[0]} QAR
                     </Text>
                 </div>
             </div>
