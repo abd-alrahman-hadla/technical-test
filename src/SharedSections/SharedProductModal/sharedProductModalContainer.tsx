@@ -4,6 +4,7 @@ import {Product_Image} from "../../Constants/sharedImagesConstants";
 import {Text, Title} from "../../Components";
 import {ISharedProductModalProps} from "./interface";
 import {AiOutlineClose} from "react-icons/ai";
+import {SharedBlankSection} from "../SharedBlankSection";
 
 const SharedProductModal = ({isOpen, onCancel}: ISharedProductModalProps) => {
 
@@ -23,6 +24,9 @@ const SharedProductModal = ({isOpen, onCancel}: ISharedProductModalProps) => {
             <Button onClick={onCancel}
                     className={"absolute z-[1001]  bg-[white] top-[-60px] left-[260px] transform-translate(-translate-x, -translate-y)"}
                     icon={<AiOutlineClose className={"text-black"}/>}/>
+            <div className={"flex justify-center  items-end"}>
+                <SharedBlankSection color={"#E4002B"} number={3}/>
+            </div>
             <div className={"bg-white rounded-[8px] h-[330px] relative mt-[160px]"}>
                 <Image width={222} height={222} src={Product_Image}
                        wrapperClassName={"absolute right-[100px] top-[-120px]"}

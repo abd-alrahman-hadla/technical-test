@@ -4,4 +4,5 @@ export interface ISharedProductCardProps {
     price: string
     isLiked?: boolean
     id: string
+    onClick?: () => void
 }

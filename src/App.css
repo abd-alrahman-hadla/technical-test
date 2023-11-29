@@ -18,7 +18,7 @@
 
 
     .default-modal .ant-modal-content {
-        @apply bg-[#F1F3F6] px-[75px] h-[589px] rounded-[44px];
+        @apply bg-[#F1F3F6] px-[75px] h-[589px] pt-[4px] rounded-[44px];
     }
 
     .flex-center {

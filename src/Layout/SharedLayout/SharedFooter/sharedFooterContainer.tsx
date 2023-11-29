@@ -3,6 +3,7 @@ import {Button, Image, Layout} from 'antd';
 import {White_Logo_Image} from "../../../Constants/sharedImagesConstants";
 import {Text} from "../../../Components";
 import {footerItems, footerSocialMedia} from "./constants";
+import {SharedBlankSection} from "../../../SharedSections/SharedBlankSection";
 
 const {Footer} = Layout;
 
@@ -46,6 +47,9 @@ const SharedFooter = ({...props}: any) => {
                 <Text className={"!text-[#ADAEB1] font-medium  max-sm:text-sm"}>
                     ©KFC, Inc. All rights reserved.
                 </Text>
+            </div>
+            <div className={"flex justify-center mt-[10px] items-end"}>
+                <SharedBlankSection color={"white"} number={3}/>
             </div>
         </Footer>
     );
