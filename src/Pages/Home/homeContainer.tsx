@@ -3,6 +3,7 @@ import {ImageSection} from "./ImageSection";
 import {TopDealsSection} from "./TopDealsSection";
 import {BestsellersSection} from "./BestsellersSection";
 import {ExploreMenuSection} from "./ExploreMenuSection";
+import {BannersSection} from "./BannersSection";
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
                 <ExploreMenuSection/>
                 <TopDealsSection/>
                 <BestsellersSection/>
+                <BannersSection/>
             </div>
         </div>
     );

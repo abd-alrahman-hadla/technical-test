@@ -7,6 +7,7 @@ import ExploreMenuBackgroundImage from '../Assets/Images/Explore-Menu-Background
 import ExploreMenuProductImage from '../Assets/Images/Explore-Menu-Product-Image.png'
 import ExploreMenuIcon from '../Assets/Icons/Explore-Menu-Icon.png'
 import ChooseMealImage from '../Assets/Images/Choose-Meal-Image.png'
+import BannerProductImage from '../Assets/Images/Banner-Product-Image.png'
 
 export const Red_Logo_Image = RedLogoImage
 export const White_Logo_Image = WhiteLogoImage
@@ -17,3 +18,4 @@ export const Explore_More_Background_Image = ExploreMenuBackgroundImage
 export const Explore_Menu_Product_Image = ExploreMenuProductImage
 export const Explore_Menu_Icon = ExploreMenuIcon
 export const Choose_Meal_Image = ChooseMealImage
+export const Banner_Product_Image = BannerProductImage
