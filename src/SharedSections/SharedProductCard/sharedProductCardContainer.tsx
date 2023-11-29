@@ -12,7 +12,7 @@ const SharedProductCard = ({...props}: ISharedProductCardProps) => {
             <Image wrapperClassName={"absolute top-[-100px]"} src={Product_Image} draggable={false}
                    preview={false} width={204} height={158}/>
             <div>
-                <Title className={"!text-[#393F52] !text-md mt-[61px]"}>
+                <Title className={"!text-secondaryColor !text-md mt-[61px]"}>
                     {name}
                 </Title>
                 <Divider className={"my-[9px]"}/>
@@ -22,7 +22,7 @@ const SharedProductCard = ({...props}: ISharedProductCardProps) => {
             </div>
             <div>
                 <div className={"bg-[#F0F4FA] h-[37px] flex-center"}>
-                    <Text className={"!text-[#393F52] font-bold text-[10px]"}>
+                    <Text className={"!text-secondaryColor font-bold text-[10px]"}>
                         {price?.split(".")[0]} QAR
                     </Text>
                 </div>

@@ -23,7 +23,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
             <div className={"flex justify-between"}>
                 <div className={"flex flex-col justify-start"}>
                     <Space className={"items-center"}>
-                        <Title className={"!text-md !font-bold !text-[#393F52] !m-0"}>
+                        <Title className={"!text-md !font-bold !text-secondaryColor !m-0"}>
                             {title}
                         </Title>
                         {
@@ -31,7 +31,7 @@ function SharedHomeSection<Item extends { id: string }>({...props}: ISharedHomeS
                             <Image src={topIcon} preview={false} draggable={false}/>
                         }
                     </Space>
-                    <div className={"bg-[#E4002B] mt-[6px] w-[34px] h-[2px]"}/>
+                    <div className={"bg-primaryColor mt-[6px] w-[34px] h-[2px]"}/>
                 </div>
                 {
                     withViewAllButton ?

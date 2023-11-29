@@ -10,7 +10,7 @@ const {Footer} = Layout;
 const SharedFooter = ({...props}: any) => {
     return (
         <Footer
-            className={"h-[282px] bg-[#393F52] p-0"}>
+            className={"h-[282px] bg-secondaryColor p-0"}>
             <div className={"flex justify-center mt-[27px]"}>
                 <Image src={White_Logo_Image} preview={false} draggable={false}/>
             </div>

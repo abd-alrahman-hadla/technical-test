@@ -9,7 +9,7 @@
     }
 
     .selected-segmented-text .ant-segmented-item-selected .ant-segmented-item-label {
-        @apply font-semibold text-[#E4002B];
+        @apply font-semibold text-primaryColor;
     }
 
     .selected-segmented-text .ant-segmented-item-selected {
@@ -22,7 +22,7 @@
     }
 
     .default-spin .ant-spin-dot-item {
-        @apply bg-[#E4002B];
+        @apply bg-primaryColor;
     }
 
     .flex-center {

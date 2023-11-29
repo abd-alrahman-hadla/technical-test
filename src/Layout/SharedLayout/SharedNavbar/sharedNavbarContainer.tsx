@@ -20,7 +20,7 @@ const SharedNavbar = ({...props}: any) => {
                             buttonNumber?.map((item, index) => {
                                 return (
                                     <Button key={index}
-                                            className={"bg-white h-[38px] w-[84px] !border-#F5F5F7 border-2 rounded-[8px] hover:!border-[#E4002B]"}/>
+                                            className={"bg-white h-[38px] w-[84px] !border-#F5F5F7 border-2 rounded-[8px] hover:!border-primaryColor"}/>
                                 )
                             })
                         }
@@ -28,8 +28,8 @@ const SharedNavbar = ({...props}: any) => {
                 </div>
                 <div className={"flex items-center"}>
                     <Button
-                        className={"bg-[#FEF2F4] px-[16px] h-[38px] !border-[#E4002B] border-2 rounded-[8px] hover:!border-[#E4002B]"}>
-                        <Text className={"!text-[#E4002B]"}>عربي</Text>
+                        className={"bg-[#FEF2F4] px-[16px] h-[38px] !border-primaryColor border-2 rounded-[8px] hover:!border-primaryColor"}>
+                        <Text className={"!text-primaryColor"}>عربي</Text>
                     </Button>
 
                 </div>

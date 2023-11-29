@@ -9,11 +9,11 @@ const ChoosingMealSection = () => {
     return (
         <div className={"h-[376px] bg-white rounded-t-lg mt-[65px]"}>
             <div className={"relative h-[44px] bg-[#F5FAFF] rounded-t-lg flex-center"}>
-                <Text className={"!text-[#393F52] font-semibold text-[18px]"}>
+                <Text className={"!text-secondaryColor font-semibold text-[18px]"}>
                     Choose Your Meal
                 </Text>
                 <div className={"absolute top-0 right-[20px]"}>
-                    <SharedBlankSection color={"#E4002B"} number={3}/>
+                    <SharedBlankSection color={"primaryColor"} number={3}/>
                 </div>
             </div>
             <div className={"flex-center mt-[15px]"}>

@@ -21,7 +21,10 @@ module.exports = {
                     xl: '1400px',
                 },
             },
-            colors: {},
+            colors: {
+                primaryColor: "#E4002B",
+                secondaryColor: "#393F52",
+            },
             boxShadow: {
                 '4xl': '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
             }

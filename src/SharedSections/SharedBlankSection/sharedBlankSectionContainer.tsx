@@ -7,7 +7,7 @@ const SharedBlankSection = ({color, number}: ISharedBlankSectionProps) => {
         <div className={"flex gap-[8px]"}>
             {
                 Array(number).fill("").map((item, index) => {
-                    return <div key={index} className={`bg-[${color}] h-[14px] w-[10px]`}/>
+                    return <div key={index} className={`bg-${color} h-[14px] w-[10px]`}/>
                 })
             }
         </div>
