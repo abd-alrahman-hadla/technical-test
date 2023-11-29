@@ -6,15 +6,19 @@ import {useProductsApi} from "../../../ReactQuery/Products/useProductsApi";
 import {SharedSpinner} from "../../../SharedSections/SharedSpinner";
 
 const AllProductsSection = () => {
-    const {data, isLoading} = useProductsApi({
-        // need pagination
-        page: 1,
-        limit: 25
-    }, {
-        onSuccess: (data) => {
-            // console.log(data)
+    const {getAllItems} = useProductsApi({
+        getAllParams: {
+            // need pagination
+            page: 1,
+            limit: 25
+        },
+        getAllOptions: {
+            onSuccess: (data) => {
+                // console.log(data)
+            }
         }
     })
+    const {data, isLoading} = getAllItems
     return (
         <>
             {isLoading ? <SharedSpinner height={"screen"}/> :

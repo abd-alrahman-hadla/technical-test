@@ -9,22 +9,27 @@ import {useProductsApi} from "../../../ReactQuery/Products/useProductsApi";
 import {SharedSpinner} from "../../../SharedSections/SharedSpinner";
 
 const TopDealsSection = () => {
-        const navigate = useNavigate()
-        const {data, isLoading} = useProductsApi({
+    const navigate = useNavigate()
+    const {getAllItems} = useProductsApi({
+        getAllParams: {
+            // need pagination
             page: 1,
             limit: 10
-        }, {
+        },
+        getAllOptions: {
             onSuccess: (data) => {
                 // console.log(data)
             }
-        })
-        return (
-            <div className={"min-h-[450px]"}>
-                {isLoading ? <SharedSpinner height={"[450px]"}/> :
-                    <SharedHomeSection<ITopDealsItem> itemsList={data?.data}
-                                                      itemRender={SingleTopDealsSection}
-                                                      withViewAllButton={true}
-                                                      uniqueId={"top-deals"}
+        }
+    })
+    const {data, isLoading} = getAllItems
+    return (
+        <div className={"min-h-[450px]"}>
+            {isLoading ? <SharedSpinner height={"[450px]"}/> :
+                <SharedHomeSection<ITopDealsItem> itemsList={data?.data}
+                                                  itemRender={SingleTopDealsSection}
+                                                  withViewAllButton={true}
+                                                  uniqueId={"top-deals"}
                                                       onItemClick={() => {
                                                           navigate(RoutersEnum.Products)
                                                       }}

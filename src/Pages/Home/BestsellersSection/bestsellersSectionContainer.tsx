@@ -11,19 +11,25 @@ const BestsellersSection = () => {
     const [isModalVisible, setIsModalVisible] = useState(false)
     const [currentItemId, setCurrentItemId] = useState<string>("")
     const {getDetails, getAllItems} = useBestsellersApi({
-        page: 1,
-        limit: 10,
-    }, currentItemId, {
-        staleTime: 100000,
-        cacheTime: 100000,
-    }, {
-        enabled: !!currentItemId,
-        staleTime: 0,
-        cacheTime: 0,
-        onSuccess: (data) => {
-            setIsModalVisible(true)
+        getAllParams: {
+            page: 1,
+            limit: 10,
+        },
+        detailsItemId: currentItemId,
+        getAllOptions: {
+            staleTime: 100000,
+            cacheTime: 100000,
+        },
+        getDetailsOptions: {
+            enabled: !!currentItemId,
+            staleTime: 0,
+            cacheTime: 0,
+            onSuccess: (data) => {
+                setIsModalVisible(true)
+            }
         }
     })
+
     const {data, isLoading} = getAllItems
     const {data: ItemData, isLoading: isGetDetailsLoading, isSuccess} = getDetails
     return (
