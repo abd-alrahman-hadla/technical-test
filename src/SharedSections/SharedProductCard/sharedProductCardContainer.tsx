@@ -23,7 +23,7 @@ const SharedProductCard = ({...props}: ISharedProductCardProps) => {
             <div>
                 <div className={"bg-[#F0F4FA] h-[37px] flex-center"}>
                     <Text className={"!text-[#393F52] font-bold text-[10px]"}>
-                        {price}
+                        {price?.split(".")[0]} QAR
                     </Text>
                 </div>
             </div>

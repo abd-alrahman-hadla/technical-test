@@ -21,6 +21,10 @@
         @apply bg-[#F1F3F6] px-[75px] h-[589px] pt-[4px] rounded-[44px];
     }
 
+    .default-spin .ant-spin-dot-item {
+        @apply bg-[#E4002B];
+    }
+
     .flex-center {
         @apply flex justify-center items-center;
     }

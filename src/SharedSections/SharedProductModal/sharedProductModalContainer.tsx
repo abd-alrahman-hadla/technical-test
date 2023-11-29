@@ -6,7 +6,7 @@ import {ISharedProductModalProps} from "./interface";
 import {AiOutlineClose} from "react-icons/ai";
 import {SharedBlankSection} from "../SharedBlankSection";
 
-const SharedProductModal = ({isOpen, onCancel}: ISharedProductModalProps) => {
+const SharedProductModal = ({data, isOpen, onCancel}: ISharedProductModalProps) => {
 
     return (
         <Modal
@@ -33,16 +33,16 @@ const SharedProductModal = ({isOpen, onCancel}: ISharedProductModalProps) => {
                        draggable={false} preview={false}/>
                 <div className={"pt-[130px] flex-1 flex-col-center gap-[8px]"}>
                     <Title className={"!text-[#393F52] !text-[16px] !font-bold"}>
-                        Super Meal
+                        {data?.name}
                     </Title>
                     <Text className={"!text-[#6A6E8E] text-sm"}>
-                        12 pcs chicken + family fries + 4 buns
+                        {data?.ingredients}
                     </Text>
                 </div>
                 <div
                     className={"bg-[#E4002B] h-[54px] flex-center w-[87%] absolute bottom-[-25px] mx-[24px] rounded-[8px] mt-auto"}>
                     <Text className={"!text-white font-bold text-md"}>
-                        15 QAR
+                        {data?.price} QAR
                     </Text>
                 </div>
             </div>
